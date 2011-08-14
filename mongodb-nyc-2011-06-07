@@ -1,0 +1,64 @@
+11:30
+
+sharding
+- better at scaling writes
+- uses ram
+
+replica sets
+- easily scale reads
+- clust of N servers
+- any 1 node can be primary
+- consensus election of primary
+- auto failover
+- auto recover
+- all writes to primary
+- reads default primary ; can be secondary
+
+write only completes on majority replication
+- db.getLastError({ w : 2 }) # acknowledge write after 2 server's get it.
+
+set member tyeps:
+( type : priority # )
+- nomral: 1
+- passive: 0
+- DR: < 1.0
+- arbiter: no data, but can vote
+
+
+deploying on openshift.redhat.com paas
+- free
+- openshift express: runtime git-based interaction
+
+
+scaling & sharding
+- allows for consistent reads (eg.: financial apps).
+shard key
+  - pick correct shard key
+    - difficult to change
+    - auto increment
+    - md5(data)
+    - month + md5(data)
+
+
+mongodb source
+-   git://github.com/mongodb
+    - mongo: c++, server
+    - mongo-[x]-driver
+    - client/ directory for extending functionality
+        - eg.: serverStatus is an extension of the command class in
+          client/comamnds.h
+
+
+4 design ideas with MongoDB
+- analytics
+    - 2 colections, tiem scoped (eg.: days, months)
+        eg.:
+            days_2011_5
+            days_2011_6
+            days_2011_7
+
+            months_2011_8
+
+- ticket sales
+    - don't necessarily need hard transactiosn
+    - article: your coffee shop doesn't use two-phase commit

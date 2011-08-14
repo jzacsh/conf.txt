@@ -1,0 +1,91 @@
+New Web Architecture
+
+  * we're back to "client/server" model.
+
+  SERVER    =>    JSON    =>    CLIENT
+  - rest
+  - db
+  - models
+
+  FRONTEND:
+    /public/
+    /public/javascript
+
+  BACKEND:
+    /src
+    ( eg.: php, ruby, etc. )
+
+
+  * Sammy.js [awesome client framework]
+  - controller
+  - DIY views
+  - plug-ins
+
+    example:
+      (function()$ {
+        var app = $.sammy('#main', function() {
+          //...
+        });
+        $(function() {
+          app.run();
+          //...
+        });
+      }(jQuery);
+
+  * Backbone.js [awesome server framework]
+    * lots of structuer
+  - models
+  - views
+  - events!
+  - ajax!
+
+
+    example:
+      //...
+      var Note = Backbone.Collection.extend({
+        url: '/notes';
+      });
+
+      backbone provides these methods:
+        fetch()
+        save()
+        destroy()
+
+
+  * Underscore [templating framework, comes with backbone.js]
+
+    example:
+      // Mustache, very similar:
+      $('#content').html(
+        Mustache.to_html(
+          '<h1>{{name}}</h1>'
+          {name: 'Foo'}
+        )
+      );
+
+    javascript/templates/
+    javascript/templates/user.jst
+    javascript/templates/address.jst
+    javascript/templates/post.jst
+    javascript/templates/comment.jst
+    javascript/templates/comments.jst
+
+    window.JST.address = _.template("...html...");
+    window.JST.address(
+      {email: 'joe@example.com', name: 'Joe Bob' }
+    );
+
+
+Visual
+  #creativejs
+  http://seb.ly/
+  http://twitter.com/@seb_ly
+
+
+SIP & node.js
+  "phono"
+
+Yehuda Katz
+  fallacy of microlib
+
+

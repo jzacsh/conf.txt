@@ -1,0 +1,12 @@
+use virtualenv + pip
+- virtualenv: local dirs of installed packages
+- pip: package manager for python
+  - req. files (txt file, like .gem)
+  - useful tools, eg.:
+    - pip freeze > reqs.txt
+    - pip install -r reqs.txt
+
+upgrade (only) django
+test
+upgrade 3rd party apps
+deploy
