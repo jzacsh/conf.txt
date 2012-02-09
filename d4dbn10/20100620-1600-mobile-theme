@@ -1,0 +1,10 @@
+Mobile Theming 101
+http://boston2010.design4drupal.org/sessions/mobile-theming-101
+
+Drupal Modules:
+	drupal.org/project/mobi
+	drupal.org/project/mobile
+	drupal.org/project/mobile_tools
+
+reduce requests: embed css
+reduce markup

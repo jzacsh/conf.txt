@@ -1,0 +1,17 @@
+steven merill
+
+	java based (.war) -- or .deb
+
+	setting up:
+		umask 002
+		same primary group as httpd
+		http://drupal.org/node/838852
+
+		xdebugtoolkit -- produces pdf reports
+
+	patch ref: simple test
+	http://drupal.org/node/602332
+
+	netbeans -- hudson plugin
+
+	showslow

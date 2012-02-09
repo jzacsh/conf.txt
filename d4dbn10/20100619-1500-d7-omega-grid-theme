@@ -1,0 +1,7 @@
+Elevating 960gs in Drupal (7) with the Omega Theme
+http://boston2010.design4drupal.org/sessions/elevating-960gs-drupal-7-omega-theme
+
+Omega: D7 Ready
+
+drush command to install sub-theme
+drush omega-subtheme "my theme"

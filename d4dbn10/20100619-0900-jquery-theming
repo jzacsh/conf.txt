@@ -1,0 +1,14 @@
+drupal session:	jQuery for Drupal 
+	http://boston2010.design4drupal.org/sessions/jquery-drupal
+
+
+	Drupal Behaviors
+		using "drupal.behavior" function wrappers. allows javascript to
+		not be dependent on page load order.
+	
+	Sending "settings"
+	-	from php: "drupal_add_js($settings, 'settings');
+	-	in jQuery: access Drupal.setgings.mySetting
+
+	Override output JS
+	-	rewrite function by name in theme's js

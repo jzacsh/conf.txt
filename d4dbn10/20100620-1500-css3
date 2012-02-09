@@ -1,0 +1,66 @@
+CSS3: The Future is Now
+http://boston2010.design4drupal.org/sessions/css3-future-now
+
+ref:
+css3generator.com
+css3.info
+w3.org/TR
+w3.org/Style/CSS/current-work
+
+
+border radius
+border-radius.com:
+	-moz-border-radius: 12px;	/* ff */
+	-khtml-border-radius: 12px;	/* konquerer */
+	-webkit-border-radius: 12px;	/* sf3; chrome */
+	border-radius: 12px;	/*opera;  ie9 */
+
+box shadow
+westciv.com/tools/boxshadows
+	box-shadow:2px 2px 2px #333333;
+
+text shadow
+lab.simurai.com/css/iloveblur
+desandro.com/articles/the-new-lens-flare
+	text-shadow:2px 2px 2px #333333;
+
+text stroke
+westciv.com/tools/textStroke
+
+multi-column layout
+	-moz-column-count:2;
+	-moz-column-gap:4px;
+	-webkit-column-count:2;
+	-webkit-column-gap:4px;
+	column-count:2;
+	column-gap:4px;
+
+gradients
+gradients.glrzad.com
+	-webkit-gradient(
+		radial,
+		left bottom,
+		left top,
+		color-stop(),
+		color-stop()
+	)
+	-moz-linear-gradient(
+		center bottom,
+		rgb(151,64,68) 2%,
+		rgb(182,90,96) 51%
+	)
+
+RGBA
+	background-color:rgb(255, 35, 0);
+	background-color:rgba(255, 35, 0, .5);
+
+Transforms
+westciv.com/tools/transforms
+	transform: scale(0.75) rotate(45deg) translate(125px, 0px) skew(0deg, 0deg); 
+	transform-origin: 0% 0%
+
+Fonts
+fontsquirrel.com
+try: typefolly.com
+typekit.com
+	google fonts
