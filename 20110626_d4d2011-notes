@@ -1,0 +1,52 @@
+jquery mobile
+    http://boston2011.design4drupal.org/sessions/jquery-mobile-and-you-building-mobile-web-app-scratch-using-drupal
+
+    slides: git://github.com/FarrowLS/jquery_mobile_and_you_slides.git
+
+    pitches:
+    - progressive enhancement
+    - 508 complicance?
+    - WAI-ARIA
+
+    features:
+    - loads pages via ajax instead of doing url change
+
+    Suggested App-Build approach:
+    1 - develop wireframes/comps
+    2 - build working mockup w/html,css,js
+    3 - build app in drupal
+
+Using the Power of Modules for Theming
+    http://boston2011.design4drupal.org/sessions/using-power-modules-theming
+
+    :
+
+Raphael.JS; beginner
+    http://boston2011.design4drupal.org/sessions/outside-garden-intro-rapha%C3%ABljs
+
+    - uses paper object.
+    - sets: collection of papers; allows batch method calls to many papers
+
+        var c =  paper.circle();
+        c.fill();
+
+Raphael.JS; intermediate
+    http://boston2011.design4drupal.org/sessions/drop-and-painter-drupal-and-rapha%C3%ABljs
+
+    - gRaphael: http://g.raphaeljs.com/
+    - extending raphael:
+        ccreating plugins in Raphael.fn, `this` is the Raphael object.
+
+    - question: which part did you start with? just getting windows/circles in
+      raphael?
+    - question: these "makeGraph"s the same scope?
+
+        var Raphael.fn.boop = function () {
+            var makeGraph = function() {}
+            makeGarph() {}
+        }
+
+Making Beautiful Maps in Drupal
+  http://boston2011.design4drupal.org/sessions/designing-maps-drupal
+
+  -
